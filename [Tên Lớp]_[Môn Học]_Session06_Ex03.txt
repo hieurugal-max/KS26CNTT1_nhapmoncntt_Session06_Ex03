@@ -1,0 +1,5 @@
+1. Sơ đồ Pipeline:
+Get-Content access.log → Select-String "TIMEOUT" → Measure-Object -Line
+Đọc file → Lọc dòng chứa TIMEOUT → Đếm số dòng.
+2. Câu lệnh PowerShell:
+Get-Content "access.log" | Select-String "TIMEOUT" | Measure-Object -Line
